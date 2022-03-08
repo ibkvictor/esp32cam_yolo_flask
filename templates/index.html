@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="Victor Ezekiel" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Home Surveillance System</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5">{{text}}</h3>
+            <img src="{{ url_for('video_feed') }}" width="100%">
+            <div style="text-align:center;">
+                <form method="post" action="/" >
+                    <input type="submit" value="activate" name="activate"/>
+                    <input type="submit" value="deactivate" name="deactivate"/>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

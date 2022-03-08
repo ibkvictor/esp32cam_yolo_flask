@@ -1,0 +1,9 @@
+# --- required packages --- #
+# --- update your pip ---- #
+pip
+flask
+cv2
+numpy
+urllib.request
+time
+yagmail
