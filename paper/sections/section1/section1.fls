@@ -1,8 +1,8 @@
-PWD /Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy
+PWD /Users/user/Documents/Arduino/esp32cam_objectdetection/paper
 INPUT /usr/local/texlive/2021basic/texmf.cnf
 INPUT /usr/local/texlive/2021basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy/sections/section1/section1.tex
+INPUT /Users/user/Documents/Arduino/esp32cam_objectdetection/paper/sections/section1/section1.tex
 OUTPUT sections/section1/section1.log
 INPUT /usr/local/texlive/2021basic/texmf-dist/tex/latex/subfiles/subfiles.cls
 INPUT /usr/local/texlive/2021basic/texmf-dist/tex/latex/subfiles/subfiles.cls

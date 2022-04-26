@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.31)  26 APR 2022 02:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.31)  26 APR 2022 02:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy/main.tex"
-(/Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy/main.tex
+**/Users/user/Documents/Arduino/esp32cam_objectdetection/paper/main.tex
+(/Users/user/Documents/Arduino/esp32cam_objectdetection/paper/main.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -770,21 +770,21 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 ) [3] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DAEA813E8E878AA04BC6CDF2BB99A835;1438.
+(rerunfilecheck)             Checksum: A14A13638CDB14405418635D7AC6FDD0;1498.
  ) 
 Here is how much of TeX's memory you used:
- 22944 strings out of 480445
- 437407 string characters out of 5892391
+ 22946 strings out of 480445
+ 437461 string characters out of 5892391
  724044 words of memory out of 5000000
- 39783 multiletter control sequences out of 15000+600000
- 407013 words of font info for 39 fonts, out of 8000000 for 9000
+ 39784 multiletter control sequences out of 15000+600000
+ 407321 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 128i,5n,130p,1254b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (3 pages, 117330 bytes).
+ 128i,5n,130p,1247b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (3 pages, 130734 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  15 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

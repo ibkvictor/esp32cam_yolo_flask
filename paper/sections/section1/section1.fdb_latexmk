@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1650936532 "/Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy/sections/section1/section1.tex" "sections/section1/section1.pdf" "section1" 1650936536
-  "/Users/user/Documents/Arduino/esp32cam_objectdetection/paper copy/sections/section1/section1.tex" 1650936525 1411 db4ce20bdf1723204de44b44c1d1bf68 ""
+["pdflatex"] 1650937869 "/Users/user/Documents/Arduino/esp32cam_objectdetection/paper/sections/section1/section1.tex" "sections/section1/section1.pdf" "section1" 1650937872
+  "/Users/user/Documents/Arduino/esp32cam_objectdetection/paper/sections/section1/section1.tex" 1650937863 1409 21c763a543339535ca3ded7cea155660 ""
   "/usr/local/texlive/2021basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2021basic/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -156,10 +156,10 @@
   "/usr/local/texlive/2021basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1643669822 2057432 8c2da9fcdd728f94744cdc270a240b8b ""
   "/usr/local/texlive/2021basic/texmf.cnf" 1616691442 628 e23d78b1be89c53495d66eec94d2300d ""
   "sections/abstract/abstract.tex" 1650931876 1314 32abb6628f4997b1555ea460b848fd66 ""
-  "sections/section1/../../main.tex" 1650936374 1911 1e3d83163982a2763b9fc1586fb413cb ""
-  "sections/section1/section1.aux" 1650936536 800 4e2bbe76f5c6f538af8f1dafef3a6569 "pdflatex"
-  "sections/section1/section1.out" 1650936536 83 e23be4a9d2b819aa57a6eb0ba16ab782 "pdflatex"
-  "sections/section1/section1.tex" 1650936525 1411 db4ce20bdf1723204de44b44c1d1bf68 ""
+  "sections/section1/../../main.tex" 1650937792 1995 1621cd3d3e0a943f2cafdb19778e9cac ""
+  "sections/section1/section1.aux" 1650937872 791 33eb80cddc37dd786bf52f95d4f0e961 "pdflatex"
+  "sections/section1/section1.out" 1650937872 83 f091515d42906f02a0d7b90a75d823fe "pdflatex"
+  "sections/section1/section1.tex" 1650937863 1409 21c763a543339535ca3ded7cea155660 ""
   (generated)
   "sections/section1/section1.aux"
   "sections/section1/section1.log"
