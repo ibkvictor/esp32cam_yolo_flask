@@ -30,8 +30,12 @@ ONNX_FILE = "yolov5n6.onnx"
 #             break
 
 def detect():
-    net = cv2.dnn.readNet(ONNX_FILE)
-    classes = []
+    while True:
+        img_resp=urllib.request.urlopen(url)
+        imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)
+        im = cv2.imdecode(imgnp,-1)
+        net = cv2.dnn.readNet(ONNX_FILE)
+        classes = []
     with open(CLASSES_FILE,"r") as f:
         classes = [line.strip() for line in f.readlines()]
 

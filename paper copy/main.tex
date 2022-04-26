@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{subfiles} % to divide my document into modules
+\usepackage{authblk} % author details and affiliations
+\usepackage{multicol} % two column arrangement
+\usepackage{natbib} % parenthetical apa citation
+\usepackage{float} % hard format figures
+\usepackage{abstract} % writing abstract
+\usepackage{chemformula} % write chemical formulae
+\usepackage{ragged2e} % align document
+\usepackage[utf8]{inputenc} % to accomodated for utf-8 encodings
+\usepackage[a4paper,bottom=2.5cm]{geometry} % adjust margins
+\usepackage{amsmath} % align math equations and their descriptions
+\usepackage{array} % used to perform column width sizing along with centering
+\usepackage[center]{caption} % center figure and table captions
+\usepackage{subcaption} % for using the subfigure environment
+\usepackage{gensymb} % generate symbols. used for the degree symbol
+\usepackage{hyperref} % referencing with backlinks and name of reference type.
+
+
+
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}} % new columns with type
+
+\graphicspath{{./abstract}{./section1}} % path to image files
+
+%%%%%%%%%%%%%%%%%%%% title
+\title{\line(1, 0){300}\\\vskip 0.5em
+IMPLEMENTATION OF A SMART SURVEILLANCE CAMERA USING ESP32-CAM AND PYTHON-FLASK\\
+\line(1, 0){300}}
+
+\author[1]{Johnny Depp}
+\date{Original Paper}
+%%%%%%%%%%%%%%%%%%%%%
+
+\includeonly{sections/abstract/abstract.tex,sections/section1/section1.tex} % includes only the specified document at compile time
+\begin{document}
+    \let\ref\autoref % uses the autoref command for \ref
+
+    \maketitle % display image
+    \subfile{sections/abstract/abstract}
+    \subfile{sections/section1/section1}
+    \subfile{sections/section2/section2}
+    \subfile{sections/section3/section3}
+
+    % \include{sections/section1}
+    % \include{sections/section2}
+    % \include{sections/section3}
+    % \include{sections/section4}
+    % \include{sections/section5}
+    
+    \bibliographystyle{apalike}
+    \bibliography{main.bib}
+\end{document}
