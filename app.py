@@ -9,9 +9,20 @@ import time # to log the time for counting and deactivating
 import yagmail # mail client, easier than Flask-Mail
 import os # generate relative paths
 
-url = input("esp 32 cam response url") # url esp32 broadcast, subject to change #'http://192.168.23.13/cam-lo.jpg'
+
+# email credentials
+email = input("enter sender email address:   ")
+password = input("enter recipient's password:    ")
+receipient_email = input("enter recipients email address:    ")
+
+# esp 32 url
+url = input("esp 32 cam response url:   ") # url esp32 broadcast, subject to change #'http://192.168.23.13/cam-lo.jpg'
+
+# model classes
 CLASSES_FILE = os.path.join("labels", "coco.names") # constant 80 classes
 ONNX_FILE = os.path.join("models", "yolov5n6.onnx") # yolo model
+
+# flask app
 app = Flask(__name__)
 app.debug = True
 
@@ -63,9 +74,6 @@ def handle_person():
 
 def send_mail():
     host_url = "http://127.0.0.1:5000/"
-    email = input("enter sender email address:   ")
-    password = input("enter recipient's password:    ")
-    receipient_email = input("enter recipients email address:    ")
     yagmail.register(email, password)
     yag = yagmail.SMTP(email)
     subject = "!INTRUDER ALERT FROM YOUR HOME SURVEILLANCE CAM!"
