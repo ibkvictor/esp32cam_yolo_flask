@@ -63,9 +63,9 @@ def handle_person():
 
 def send_mail():
     host_url = "http://127.0.0.1:5000/"
-    email = "mce327mce@gmail.com"
-    password = "327mce327"
-    receipient_email = "mce327mce@gmail.com"
+    email = input("enter sender email address:   ")
+    password = input("enter recipient's password:    ")
+    receipient_email = input("enter recipients email address:    ")
     yagmail.register(email, password)
     yag = yagmail.SMTP(email)
     subject = "!INTRUDER ALERT FROM YOUR HOME SURVEILLANCE CAM!"
