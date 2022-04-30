@@ -16,7 +16,7 @@ Ensure you have the arduino ide esp32 cam package package installed on your comp
 open the Arduino sketch file `sketch\esp32cam_objectdetection.ino` in the Arduino IDE change the network credentials and upload to your esp32cam
 
 ### Change email credentials
-Change the email address and password in app.py.
+Change the email address and password in app.py. If you are using gmail, ensure that the less secure apps setting is switched on. You can check here for more details. [My google account activity settings](https://www.google.com/settings/security/lesssecureapps)
 
 ### Run
 ```python
