@@ -17,17 +17,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    sender_email_address = input("enter recipients email address:   ")
+    sender_password = input("enter recipients email address:    ")
+    yagmail.register(sender_email_address, sender_password)
+    recipient_email_address = input("enter recipients email address:    ")
+    yag = yagmail.SMTP(sender_email_address)
 
-    yagmail.register('mce327mce@gmail.com', '327mce327')
-    yag = yagmail.SMTP('mce327mce@gmail.com')
-
-    # msg = Message('Hello', sender = 'mce327mce@gmail.com', recipients = ['mce327mce@gmail.com'])
+    # msg = Message('Hello', sender = '****************e@gmail.com', recipients = ['************@gmail.com'])
     # msg.body = "Hello Flask message sent from Flask-Mail"
     # mail.send(msg)
     contents = ["This is the body, and here is just text"]
     # This is the body, and here is just text http://somedomain/image.png',
     #         'You can find an audio file attached.', '/local/path/song.mp3']
-    yag.send('mce327mce@gmail.com', 'subject', contents)
+    yag.send(recipient_email_address, 'subject', contents)
     return "Sent"
 
 if __name__ == '__main__':

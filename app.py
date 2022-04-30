@@ -9,7 +9,7 @@ import time # to log the time for counting and deactivating
 import yagmail # mail client, easier than Flask-Mail
 import os # generate relative paths
 
-url='http://192.168.23.13/cam-lo.jpg' # url esp32 broadcast, subject to change
+url = input("esp 32 cam response url") # url esp32 broadcast, subject to change #'http://192.168.23.13/cam-lo.jpg'
 CLASSES_FILE = os.path.join("labels", "coco.names") # constant 80 classes
 ONNX_FILE = os.path.join("models", "yolov5n6.onnx") # yolo model
 app = Flask(__name__)
