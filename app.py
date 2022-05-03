@@ -33,7 +33,7 @@ interval_mins = 20 # how long till next email if intruder is detected
 action = "activate" # deactivate or activate
 frames_per_second = 1 # number of frames per second. too high a problem and too low is too slow
 
-def handle_person():
+def handle_person(image):
     global action
     global t
     global counter
@@ -49,7 +49,7 @@ def handle_person():
             print(action)
             print(mail_time)
             if action == "activate":
-                print(send_mail())
+                print(send_mail(image))
             print(time.perf_counter() - checker, "time checker")
             t = time.perf_counter()
             mail_time = t
@@ -72,18 +72,19 @@ def handle_person():
         t = time.perf_counter()
     print(counter)
 
-def send_mail():
+def send_mail(image):
     host_url = "http://127.0.0.1:5000/"
     yagmail.register(email, password)
     yag = yagmail.SMTP(email)
     subject = "!INTRUDER ALERT FROM YOUR HOME SURVEILLANCE CAM!"
-    contents = [r"""
-                                Caution: There is an intruder in your house
+    ret, buffer = cv2.imencode('.jpg', image)
+    frame = buffer.tobytes()
+    contents = [rf"""
+                               Caution: There is an intruder in your house
         
-                                You can deactivate this message by going to {}
-
-                                                Thank you :)
-    """.format(host_url)]
+                                You can deactivate this message by going to {host_url} on your local network
+                                <img src = "data:image/jpeg;base64, {frame}>
+                                                Thank you :)"""]
     yag.send(receipient_email, subject, contents)
     return "Sent"
 
@@ -140,7 +141,7 @@ def detect_person():
                     x,y,w,h = boxes[i]
                     label = str(classes[class_ids[i]])
                     if label == "person":
-                        handle_person()
+                        handle_person(img)
                         label += str(counter)
                         color = colors[class_ids[i]]
                         cv2.rectangle(img,(x,y),(x+w,y+h),color,2)
